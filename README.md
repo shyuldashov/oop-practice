@@ -103,7 +103,7 @@ _В классе `Game` необходимо описать логику игр�
     - После каждой пары вопросов пользователю предлагается продолжить игру
 
 
-####SOLID Principle:
+#### SOLID Principle:
     Single Responsibility Principle
     Opened/Closed Principle
     Liscov's Substitution Principle
