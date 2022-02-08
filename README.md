@@ -125,3 +125,48 @@ __Выводы(Object-Oriented Design, SOLID)__
         затратами и расширять его без изменения существующего кода
 
 ---
+
+#### Сложность алгоритмов (Algorithms)
+
+_"Одно решение - разные алгоритмы"_
+    
+    1.
+    def palindrom_one(string):
+        reverse = ""
+        i = len(string)-1
+        while i >= 0:
+        reverse += string[i]
+        i -= 1
+        if string.lower() == reverse.lower():
+            return True
+        return False
+
+    2. 
+    def palindrom_two(string):
+        mid = len(string) // 2
+        j = len(string) - 1
+        for i in range(mid):
+            if string[i] != string[j]:
+             return False
+            j -= 1  
+        return True
+    
+    3.
+    def palindrom_three(string):
+        s1 = list(string)
+        s2 = s1.copy()
+        s2.reverse()
+        if s1 == s2:
+            return True
+        return False
+
+__Выводы__
+
+    - Асимптотический анализ — сравнение затрат времени алгоритмов, 
+        выполняющих решение некоторой задачи, при больших объемах входных данных
+
+    - Сложность алгоритма — это функция, позволяющая определить, как быстро 
+        увеличивается время работы алгоритма с увеличением объёма данных
+
+    - Основной оценкой роста, встречающейся в асимптотическом анализе является 
+        'О-большое' — верхняя асимптотическая оценка роста временной функции
