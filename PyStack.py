@@ -21,5 +21,8 @@ class Stack:
     def size(self):
         return len(self.__data)
 
+    def clear(self):
+        self.__data = list()
+
     def show(self):
         print(f"\n".join(str(v) for v in self.__data))
